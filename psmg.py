@@ -8,13 +8,16 @@ def Registration():
 	pw = input()
 	print(title,ID,pw)
 	list = [title,ID,pw]
-	nrg.append(list)
-	print(nrg)
+	nrg.append(list)	
+
+	return nrg
+
 
 
 
 def main():
-	Registration()
+	foo = Registration() 
+	print(foo)
 	# print('Menu')
 	# print('List(ls)')
 	# print('Serch(sc)')
