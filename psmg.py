@@ -1,17 +1,15 @@
 import json
 
-def Registration():
-	print('タイトルを入力してください。')
-	title = input()
-	print('IDを入力してください。')
-	ID = input()
-	print('パスワードを入力してください')
-	pw = input()
-	nrg = {title:{ID:pw}}	
-
-	return nrg
-
-
+# TODO:メソッド名は小文字で書いておくこと
+# Inputで取ってきていたものは別のしごととして切り出す。
+def Registration(title, ID, pw):
+	# print('タイトルを入力してください。')
+	# title = input()
+	# print('IDを入力してください。')
+	# ID = input()
+	# print('パスワードを入力してください')
+	# pw = input()
+	return {title:{ID:pw}}
 
 
 def main():
@@ -25,12 +23,6 @@ def main():
 	print(json_object)
 	json.dump(json_object,open('pass.json','w'))
 
-
-	# print('Menu')
-	# print('List(ls)')
-	# print('Serch(sc)')
-	# print('Registration(rg)')
-	# print('change(cg)')
 
 if __name__ == '__main__':
 	main()
